@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4018D48D55EEEA930E11EA /* Pods_RefrigeratorRecipeRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58B093900790E3F3F1D39F3 /* Pods_RefrigeratorRecipeRx.framework */; };
 		59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CA226F55DE00011595 /* AppDelegate.swift */; };
 		59BCE6CD226F55DE00011595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CC226F55DE00011595 /* ViewController.swift */; };
 		59BCE6D0226F55DE00011595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6CE226F55DE00011595 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		59BCE6F1226F63DE00011595 /* Domain in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6F0226F63DE00011595 /* Domain */; };
 		59BCE6F3226F63E900011595 /* Presentation in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6F2226F63E900011595 /* Presentation */; };
 		59BCE6F5226F63F000011595 /* Util in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6F4226F63F000011595 /* Util */; };
+		FFFCEA12ED73DC5D6B355CC3 /* Pods_RefrigeratorRecipeRxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F13AFF5C6A9D8B60E157D30 /* Pods_RefrigeratorRecipeRxTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D42A9167D9D12361308AB08 /* Pods-RefrigeratorRecipeRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefrigeratorRecipeRx.release.xcconfig"; path = "Pods/Target Support Files/Pods-RefrigeratorRecipeRx/Pods-RefrigeratorRecipeRx.release.xcconfig"; sourceTree = "<group>"; };
+		3F13AFF5C6A9D8B60E157D30 /* Pods_RefrigeratorRecipeRxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RefrigeratorRecipeRxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E414C7DD6A2F3D17F9D35A /* Pods-RefrigeratorRecipeRxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefrigeratorRecipeRxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RefrigeratorRecipeRxTests/Pods-RefrigeratorRecipeRxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		59BCE6C7226F55DE00011595 /* RefrigeratorRecipeRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefrigeratorRecipeRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BCE6CA226F55DE00011595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59BCE6CC226F55DE00011595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +49,9 @@
 		59BCE6F0226F63DE00011595 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Domain; sourceTree = "<group>"; };
 		59BCE6F2226F63E900011595 /* Presentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Presentation; sourceTree = "<group>"; };
 		59BCE6F4226F63F000011595 /* Util */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Util; sourceTree = "<group>"; };
+		7DA9AA47CC3D7155CA1DD6D6 /* Pods-RefrigeratorRecipeRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefrigeratorRecipeRx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RefrigeratorRecipeRx/Pods-RefrigeratorRecipeRx.debug.xcconfig"; sourceTree = "<group>"; };
+		A62EBB241C8B94E4C804756F /* Pods-RefrigeratorRecipeRxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefrigeratorRecipeRxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RefrigeratorRecipeRxTests/Pods-RefrigeratorRecipeRxTests.release.xcconfig"; sourceTree = "<group>"; };
+		F58B093900790E3F3F1D39F3 /* Pods_RefrigeratorRecipeRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RefrigeratorRecipeRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4018D48D55EEEA930E11EA /* Pods_RefrigeratorRecipeRx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,18 +67,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFCEA12ED73DC5D6B355CC3 /* Pods_RefrigeratorRecipeRxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092B8FE9769D7CCC9DF6A3F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F58B093900790E3F3F1D39F3 /* Pods_RefrigeratorRecipeRx.framework */,
+				3F13AFF5C6A9D8B60E157D30 /* Pods_RefrigeratorRecipeRxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		59BCE6BE226F55DE00011595 = {
 			isa = PBXGroup;
 			children = (
 				59BCE6C9226F55DE00011595 /* RefrigeratorRecipeRx */,
 				59BCE6DE226F55DF00011595 /* RefrigeratorRecipeRxTests */,
 				59BCE6C8226F55DE00011595 /* Products */,
+				FE251325CFF22E8591897C54 /* Pods */,
+				092B8FE9769D7CCC9DF6A3F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +129,17 @@
 			path = RefrigeratorRecipeRxTests;
 			sourceTree = "<group>";
 		};
+		FE251325CFF22E8591897C54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DA9AA47CC3D7155CA1DD6D6 /* Pods-RefrigeratorRecipeRx.debug.xcconfig */,
+				1D42A9167D9D12361308AB08 /* Pods-RefrigeratorRecipeRx.release.xcconfig */,
+				41E414C7DD6A2F3D17F9D35A /* Pods-RefrigeratorRecipeRxTests.debug.xcconfig */,
+				A62EBB241C8B94E4C804756F /* Pods-RefrigeratorRecipeRxTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59BCE6E4226F55DF00011595 /* Build configuration list for PBXNativeTarget "RefrigeratorRecipeRx" */;
 			buildPhases = (
+				5C66C80532DE3CC6F2A858A1 /* [CP] Check Pods Manifest.lock */,
 				59BCE6C3226F55DE00011595 /* Sources */,
 				59BCE6C4226F55DE00011595 /* Frameworks */,
 				59BCE6C5226F55DE00011595 /* Resources */,
+				1C359BD7A16DF37EFA654D20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59BCE6E7226F55DF00011595 /* Build configuration list for PBXNativeTarget "RefrigeratorRecipeRxTests" */;
 			buildPhases = (
+				C892338259639251B0508621 /* [CP] Check Pods Manifest.lock */,
 				59BCE6D7226F55DF00011595 /* Sources */,
 				59BCE6D8226F55DF00011595 /* Frameworks */,
 				59BCE6D9226F55DF00011595 /* Resources */,
@@ -207,6 +242,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C359BD7A16DF37EFA654D20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RefrigeratorRecipeRx/Pods-RefrigeratorRecipeRx-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RefrigeratorRecipeRx/Pods-RefrigeratorRecipeRx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C66C80532DE3CC6F2A858A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RefrigeratorRecipeRx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C892338259639251B0508621 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RefrigeratorRecipeRxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59BCE6C3226F55DE00011595 /* Sources */ = {
@@ -374,6 +482,7 @@
 		};
 		59BCE6E5226F55DF00011595 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA9AA47CC3D7155CA1DD6D6 /* Pods-RefrigeratorRecipeRx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +501,7 @@
 		};
 		59BCE6E6226F55DF00011595 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D42A9167D9D12361308AB08 /* Pods-RefrigeratorRecipeRx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -410,6 +520,7 @@
 		};
 		59BCE6E8226F55DF00011595 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E414C7DD6A2F3D17F9D35A /* Pods-RefrigeratorRecipeRxTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -431,6 +542,7 @@
 		};
 		59BCE6E9226F55DF00011595 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EBB241C8B94E4C804756F /* Pods-RefrigeratorRecipeRxTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
