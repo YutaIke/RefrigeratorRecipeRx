@@ -13,6 +13,10 @@
 		59BCE6D2226F55DF00011595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6D1226F55DF00011595 /* Assets.xcassets */; };
 		59BCE6D5226F55DF00011595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6D3226F55DF00011595 /* LaunchScreen.storyboard */; };
 		59BCE6E0226F55DF00011595 /* RefrigeratorRecipeRxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6DF226F55DF00011595 /* RefrigeratorRecipeRxTests.swift */; };
+		59BCE6EB226F579400011595 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6EA226F579400011595 /* Data */; };
+		59BCE6F1226F63DE00011595 /* Domain in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6F0226F63DE00011595 /* Domain */; };
+		59BCE6F3226F63E900011595 /* Presentation in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6F2226F63E900011595 /* Presentation */; };
+		59BCE6F5226F63F000011595 /* Util in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6F4226F63F000011595 /* Util */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		59BCE6DB226F55DF00011595 /* RefrigeratorRecipeRxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefrigeratorRecipeRxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BCE6DF226F55DF00011595 /* RefrigeratorRecipeRxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorRecipeRxTests.swift; sourceTree = "<group>"; };
 		59BCE6E1226F55DF00011595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59BCE6EA226F579400011595 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		59BCE6F0226F63DE00011595 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Domain; sourceTree = "<group>"; };
+		59BCE6F2226F63E900011595 /* Presentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Presentation; sourceTree = "<group>"; };
+		59BCE6F4226F63F000011595 /* Util */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Util; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +86,15 @@
 			isa = PBXGroup;
 			children = (
 				59BCE6CA226F55DE00011595 /* AppDelegate.swift */,
-				59BCE6CC226F55DE00011595 /* ViewController.swift */,
-				59BCE6CE226F55DE00011595 /* Main.storyboard */,
 				59BCE6D1226F55DF00011595 /* Assets.xcassets */,
-				59BCE6D3226F55DF00011595 /* LaunchScreen.storyboard */,
+				59BCE6EA226F579400011595 /* Data */,
+				59BCE6F0226F63DE00011595 /* Domain */,
 				59BCE6D6226F55DF00011595 /* Info.plist */,
+				59BCE6D3226F55DF00011595 /* LaunchScreen.storyboard */,
+				59BCE6CE226F55DE00011595 /* Main.storyboard */,
+				59BCE6F2226F63E900011595 /* Presentation */,
+				59BCE6F4226F63F000011595 /* Util */,
+				59BCE6CC226F55DE00011595 /* ViewController.swift */,
 			);
 			path = RefrigeratorRecipeRx;
 			sourceTree = "<group>";
@@ -177,8 +189,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59BCE6F1226F63DE00011595 /* Domain in Resources */,
 				59BCE6D5226F55DF00011595 /* LaunchScreen.storyboard in Resources */,
+				59BCE6F5226F63F000011595 /* Util in Resources */,
 				59BCE6D2226F55DF00011595 /* Assets.xcassets in Resources */,
+				59BCE6EB226F579400011595 /* Data in Resources */,
+				59BCE6F3226F63E900011595 /* Presentation in Resources */,
 				59BCE6D0226F55DE00011595 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
