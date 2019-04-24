@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="zDf-yx-nu8" kind="relationship" relationship="rootViewController" id="2md-M8-zQY"/>
+                        <segue destination="zDf-yx-nu8" kind="relationship" relationship="rootViewController" id="Q1r-U3-WXA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XlX-AU-w7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -29,7 +29,7 @@
         <!--ExpirationListView-->
         <scene sceneID="0xh-kY-Jn4">
             <objects>
-                <viewControllerPlaceholder storyboardName="ExpirationListView" id="zDf-yx-nu8" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ExpirationListView" referencedIdentifier="ExpirationListView" id="zDf-yx-nu8" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="jTV-TF-lCe"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1U-kg-mtv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -39,7 +39,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="f3d-PG-t0G">
             <objects>
-                <tabBarController id="oSs-Qw-3P8" sceneMemberID="viewController">
+                <tabBarController id="oSs-Qw-3P8" customClass="TabBarController" customModule="RefrigeratorRecipeRx" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mk1-yv-9H2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
