@@ -8,16 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3F4018D48D55EEEA930E11EA /* Pods_RefrigeratorRecipeRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58B093900790E3F3F1D39F3 /* Pods_RefrigeratorRecipeRx.framework */; };
+		59A99FDF2270A7F500F63A3B /* ExpirationListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59A99FDE2270A7F500F63A3B /* ExpirationListCell.xib */; };
 		59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CA226F55DE00011595 /* AppDelegate.swift */; };
 		59BCE6CD226F55DE00011595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CC226F55DE00011595 /* ViewController.swift */; };
-		59BCE6D0226F55DE00011595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6CE226F55DE00011595 /* Main.storyboard */; };
 		59BCE6D2226F55DF00011595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6D1226F55DF00011595 /* Assets.xcassets */; };
 		59BCE6D5226F55DF00011595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6D3226F55DF00011595 /* LaunchScreen.storyboard */; };
 		59BCE6E0226F55DF00011595 /* RefrigeratorRecipeRxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6DF226F55DF00011595 /* RefrigeratorRecipeRxTests.swift */; };
-		59BCE6EB226F579400011595 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6EA226F579400011595 /* Data */; };
-		59BCE6F1226F63DE00011595 /* Domain in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6F0226F63DE00011595 /* Domain */; };
-		59BCE6F3226F63E900011595 /* Presentation in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6F2226F63E900011595 /* Presentation */; };
-		59BCE6F5226F63F000011595 /* Util in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6F4226F63F000011595 /* Util */; };
 		FFFCEA12ED73DC5D6B355CC3 /* Pods_RefrigeratorRecipeRxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F13AFF5C6A9D8B60E157D30 /* Pods_RefrigeratorRecipeRxTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,20 +31,18 @@
 		1D42A9167D9D12361308AB08 /* Pods-RefrigeratorRecipeRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefrigeratorRecipeRx.release.xcconfig"; path = "Pods/Target Support Files/Pods-RefrigeratorRecipeRx/Pods-RefrigeratorRecipeRx.release.xcconfig"; sourceTree = "<group>"; };
 		3F13AFF5C6A9D8B60E157D30 /* Pods_RefrigeratorRecipeRxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RefrigeratorRecipeRxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E414C7DD6A2F3D17F9D35A /* Pods-RefrigeratorRecipeRxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefrigeratorRecipeRxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RefrigeratorRecipeRxTests/Pods-RefrigeratorRecipeRxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59A99FC92270A68700F63A3B /* ExpirationListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExpirationListView.storyboard; sourceTree = "<group>"; };
+		59A99FCA2270A68700F63A3B /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		59A99FDE2270A7F500F63A3B /* ExpirationListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpirationListCell.xib; sourceTree = "<group>"; };
 		59BCE6C7226F55DE00011595 /* RefrigeratorRecipeRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefrigeratorRecipeRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BCE6CA226F55DE00011595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59BCE6CC226F55DE00011595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		59BCE6CF226F55DE00011595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59BCE6D1226F55DF00011595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59BCE6D4226F55DF00011595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59BCE6D6226F55DF00011595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59BCE6DB226F55DF00011595 /* RefrigeratorRecipeRxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefrigeratorRecipeRxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BCE6DF226F55DF00011595 /* RefrigeratorRecipeRxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorRecipeRxTests.swift; sourceTree = "<group>"; };
 		59BCE6E1226F55DF00011595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59BCE6EA226F579400011595 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
-		59BCE6F0226F63DE00011595 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Domain; sourceTree = "<group>"; };
-		59BCE6F2226F63E900011595 /* Presentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Presentation; sourceTree = "<group>"; };
-		59BCE6F4226F63F000011595 /* Util */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Util; sourceTree = "<group>"; };
 		7DA9AA47CC3D7155CA1DD6D6 /* Pods-RefrigeratorRecipeRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefrigeratorRecipeRx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RefrigeratorRecipeRx/Pods-RefrigeratorRecipeRx.debug.xcconfig"; sourceTree = "<group>"; };
 		A62EBB241C8B94E4C804756F /* Pods-RefrigeratorRecipeRxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefrigeratorRecipeRxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RefrigeratorRecipeRxTests/Pods-RefrigeratorRecipeRxTests.release.xcconfig"; sourceTree = "<group>"; };
 		F58B093900790E3F3F1D39F3 /* Pods_RefrigeratorRecipeRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RefrigeratorRecipeRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +77,149 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		59A99FCC2270A6B700F63A3B /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				59A99FCD2270A6C600F63A3B /* DateStore */,
+				59A99FCE2270A6CA00F63A3B /* Entity */,
+				59A99FCF2270A6CF00F63A3B /* Network */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		59A99FCD2270A6C600F63A3B /* DateStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DateStore;
+			sourceTree = "<group>";
+		};
+		59A99FCE2270A6CA00F63A3B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		59A99FCF2270A6CF00F63A3B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		59A99FD02270A6DA00F63A3B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				59A99FD12270A6DE00F63A3B /* Model */,
+				59A99FD22270A6E600F63A3B /* Repository */,
+				59A99FD32270A6EB00F63A3B /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		59A99FD12270A6DE00F63A3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59A99FD22270A6E600F63A3B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		59A99FD32270A6EB00F63A3B /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		59A99FD42270A6F000F63A3B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				59A99FD52270A70300F63A3B /* Presenter */,
+				59A99FD62270A70800F63A3B /* UI */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		59A99FD52270A70300F63A3B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		59A99FD62270A70800F63A3B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				59A99FD72270A70D00F63A3B /* Cell */,
+				59A99FD82270A71100F63A3B /* View */,
+				59A99FD92270A71500F63A3B /* ViewController */,
+				59A99FDA2270A71B00F63A3B /* ViewModel */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		59A99FD72270A70D00F63A3B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				59A99FDE2270A7F500F63A3B /* ExpirationListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		59A99FD82270A71100F63A3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59A99FC92270A68700F63A3B /* ExpirationListView.storyboard */,
+				59A99FCA2270A68700F63A3B /* TabBarController.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		59A99FD92270A71500F63A3B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		59A99FDA2270A71B00F63A3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		59A99FDB2270A72600F63A3B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				59A99FDC2270A72A00F63A3B /* Error */,
+				59A99FDD2270A72F00F63A3B /* Shared */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		59A99FDC2270A72A00F63A3B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		59A99FDD2270A72F00F63A3B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		59BCE6BE226F55DE00011595 = {
 			isa = PBXGroup;
 			children = (
@@ -108,13 +245,12 @@
 			children = (
 				59BCE6CA226F55DE00011595 /* AppDelegate.swift */,
 				59BCE6D1226F55DF00011595 /* Assets.xcassets */,
-				59BCE6EA226F579400011595 /* Data */,
-				59BCE6F0226F63DE00011595 /* Domain */,
+				59A99FCC2270A6B700F63A3B /* Date */,
+				59A99FD02270A6DA00F63A3B /* Domain */,
 				59BCE6D6226F55DF00011595 /* Info.plist */,
 				59BCE6D3226F55DF00011595 /* LaunchScreen.storyboard */,
-				59BCE6CE226F55DE00011595 /* Main.storyboard */,
-				59BCE6F2226F63E900011595 /* Presentation */,
-				59BCE6F4226F63F000011595 /* Util */,
+				59A99FD42270A6F000F63A3B /* Presentation */,
+				59A99FDB2270A72600F63A3B /* Util */,
 				59BCE6CC226F55DE00011595 /* ViewController.swift */,
 			);
 			path = RefrigeratorRecipeRx;
@@ -224,13 +360,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59BCE6F1226F63DE00011595 /* Domain in Resources */,
 				59BCE6D5226F55DF00011595 /* LaunchScreen.storyboard in Resources */,
-				59BCE6F5226F63F000011595 /* Util in Resources */,
+				59A99FDF2270A7F500F63A3B /* ExpirationListCell.xib in Resources */,
 				59BCE6D2226F55DF00011595 /* Assets.xcassets in Resources */,
-				59BCE6EB226F579400011595 /* Data in Resources */,
-				59BCE6F3226F63E900011595 /* Presentation in Resources */,
-				59BCE6D0226F55DE00011595 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,14 +477,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		59BCE6CE226F55DE00011595 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				59BCE6CF226F55DE00011595 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		59BCE6D3226F55DF00011595 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
