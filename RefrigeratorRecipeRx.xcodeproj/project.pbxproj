@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F4018D48D55EEEA930E11EA /* Pods_RefrigeratorRecipeRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58B093900790E3F3F1D39F3 /* Pods_RefrigeratorRecipeRx.framework */; };
-		59A99FDF2270A7F500F63A3B /* ExpirationListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59A99FDE2270A7F500F63A3B /* ExpirationListCell.xib */; };
+		59A99FDF2270A7F500F63A3B /* ExpirationListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59A99FDE2270A7F500F63A3B /* ExpirationListViewCell.xib */; };
+		59A99FE12270ABAF00F63A3B /* ExpirationListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FE02270ABAF00F63A3B /* ExpirationListViewCell.swift */; };
 		59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CA226F55DE00011595 /* AppDelegate.swift */; };
 		59BCE6CD226F55DE00011595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CC226F55DE00011595 /* ViewController.swift */; };
 		59BCE6D2226F55DF00011595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6D1226F55DF00011595 /* Assets.xcassets */; };
@@ -33,7 +34,8 @@
 		41E414C7DD6A2F3D17F9D35A /* Pods-RefrigeratorRecipeRxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefrigeratorRecipeRxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RefrigeratorRecipeRxTests/Pods-RefrigeratorRecipeRxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		59A99FC92270A68700F63A3B /* ExpirationListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExpirationListView.storyboard; sourceTree = "<group>"; };
 		59A99FCA2270A68700F63A3B /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
-		59A99FDE2270A7F500F63A3B /* ExpirationListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpirationListCell.xib; sourceTree = "<group>"; };
+		59A99FDE2270A7F500F63A3B /* ExpirationListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpirationListViewCell.xib; sourceTree = "<group>"; };
+		59A99FE02270ABAF00F63A3B /* ExpirationListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListViewCell.swift; sourceTree = "<group>"; };
 		59BCE6C7226F55DE00011595 /* RefrigeratorRecipeRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefrigeratorRecipeRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BCE6CA226F55DE00011595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59BCE6CC226F55DE00011595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -169,7 +171,8 @@
 		59A99FD72270A70D00F63A3B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				59A99FDE2270A7F500F63A3B /* ExpirationListCell.xib */,
+				59A99FDE2270A7F500F63A3B /* ExpirationListViewCell.xib */,
+				59A99FE02270ABAF00F63A3B /* ExpirationListViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -361,7 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59BCE6D5226F55DF00011595 /* LaunchScreen.storyboard in Resources */,
-				59A99FDF2270A7F500F63A3B /* ExpirationListCell.xib in Resources */,
+				59A99FDF2270A7F500F63A3B /* ExpirationListViewCell.xib in Resources */,
 				59BCE6D2226F55DF00011595 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +458,7 @@
 			files = (
 				59BCE6CD226F55DE00011595 /* ViewController.swift in Sources */,
 				59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */,
+				59A99FE12270ABAF00F63A3B /* ExpirationListViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
