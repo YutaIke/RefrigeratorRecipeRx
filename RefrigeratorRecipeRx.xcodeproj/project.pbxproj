@@ -13,6 +13,7 @@
 		59A99FE32270AE7A00F63A3B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FE22270AE7A00F63A3B /* TabBarController.swift */; };
 		59A99FE42270B2B300F63A3B /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A99FCA2270A68700F63A3B /* TabBarController.storyboard */; };
 		59A99FE52270B32B00F63A3B /* ExpirationListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A99FC92270A68700F63A3B /* ExpirationListView.storyboard */; };
+		59A99FE72270B4CD00F63A3B /* ExpirationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FE62270B4CD00F63A3B /* ExpirationListViewController.swift */; };
 		59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CA226F55DE00011595 /* AppDelegate.swift */; };
 		59BCE6CD226F55DE00011595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CC226F55DE00011595 /* ViewController.swift */; };
 		59BCE6D2226F55DF00011595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6D1226F55DF00011595 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		59A99FDE2270A7F500F63A3B /* ExpirationListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpirationListViewCell.xib; sourceTree = "<group>"; };
 		59A99FE02270ABAF00F63A3B /* ExpirationListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListViewCell.swift; sourceTree = "<group>"; };
 		59A99FE22270AE7A00F63A3B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		59A99FE62270B4CD00F63A3B /* ExpirationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListViewController.swift; sourceTree = "<group>"; };
 		59BCE6C7226F55DE00011595 /* RefrigeratorRecipeRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefrigeratorRecipeRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BCE6CA226F55DE00011595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59BCE6CC226F55DE00011595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		59A99FD92270A71500F63A3B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				59A99FE62270B4CD00F63A3B /* ExpirationListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A99FE72270B4CD00F63A3B /* ExpirationListViewController.swift in Sources */,
 				59BCE6CD226F55DE00011595 /* ViewController.swift in Sources */,
 				59A99FE32270AE7A00F63A3B /* TabBarController.swift in Sources */,
 				59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */,
