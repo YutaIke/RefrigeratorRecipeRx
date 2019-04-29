@@ -1,0 +1,28 @@
+//
+//  ExpirationListWireframe.swift
+//  RefrigeratorRecipeRx
+//
+//  Created by 池友太 on 2019/04/29.
+//  Copyright © 2019 Yuta Ike. All rights reserved.
+//
+
+import UIKit
+
+protocol ExpirationListWireframeProtocol {
+    var viewController: ExpirationListViewController? { get set }
+    
+    func showDetail()
+}
+
+class ExpirationListWireframe: ExpirationListWireframeProtocol {
+    weak var viewController: ExpirationListViewController?
+    
+    func showDetail() {
+        // TODO: 詳細画面遷移
+//        let nextViewController =
+//        let navigationController = UINavigationController(rootViewController: nextViewController)
+//        viewController?.present(navigationController, animated: true, completion: nil)
+    }
+    
+    
+}
