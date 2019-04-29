@@ -15,6 +15,7 @@
 		59A99FE52270B32B00F63A3B /* ExpirationListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A99FC92270A68700F63A3B /* ExpirationListView.storyboard */; };
 		59A99FE72270B4CD00F63A3B /* ExpirationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FE62270B4CD00F63A3B /* ExpirationListViewController.swift */; };
 		59A99FE9227733AA00F63A3B /* ExpirationListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FE8227733AA00F63A3B /* ExpirationListPresenter.swift */; };
+		59A99FED22773A9100F63A3B /* ExpirationListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FEC22773A9100F63A3B /* ExpirationListBuilder.swift */; };
 		59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CA226F55DE00011595 /* AppDelegate.swift */; };
 		59BCE6CD226F55DE00011595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CC226F55DE00011595 /* ViewController.swift */; };
 		59BCE6D2226F55DF00011595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6D1226F55DF00011595 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		59A99FE22270AE7A00F63A3B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		59A99FE62270B4CD00F63A3B /* ExpirationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListViewController.swift; sourceTree = "<group>"; };
 		59A99FE8227733AA00F63A3B /* ExpirationListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListPresenter.swift; sourceTree = "<group>"; };
+		59A99FEC22773A9100F63A3B /* ExpirationListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListBuilder.swift; sourceTree = "<group>"; };
 		59BCE6C7226F55DE00011595 /* RefrigeratorRecipeRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefrigeratorRecipeRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BCE6CA226F55DE00011595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59BCE6CC226F55DE00011595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +236,22 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		59A99FEA2277389200F63A3B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				59A99FEB22773A7900F63A3B /* Builder */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		59A99FEB22773A7900F63A3B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				59A99FEC22773A9100F63A3B /* ExpirationListBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		59BCE6BE226F55DE00011595 = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +275,7 @@
 		59BCE6C9226F55DE00011595 /* RefrigeratorRecipeRx */ = {
 			isa = PBXGroup;
 			children = (
+				59A99FEA2277389200F63A3B /* Application */,
 				59BCE6CA226F55DE00011595 /* AppDelegate.swift */,
 				59BCE6D1226F55DF00011595 /* Assets.xcassets */,
 				59A99FCC2270A6B700F63A3B /* Date */,
@@ -479,6 +498,7 @@
 				59A99FE9227733AA00F63A3B /* ExpirationListPresenter.swift in Sources */,
 				59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */,
 				59A99FE12270ABAF00F63A3B /* ExpirationListViewCell.swift in Sources */,
+				59A99FED22773A9100F63A3B /* ExpirationListBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
