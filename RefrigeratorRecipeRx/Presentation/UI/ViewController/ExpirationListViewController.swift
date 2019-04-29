@@ -14,6 +14,12 @@ protocol ExpirationListProtocol: class {
 
 class ExpirationListViewController: UIViewController {
     
+    var presenter: ExpirationListPresenterProtocol?
+    
+    public func inject(presenter: ExpirationListPresenter) {
+        self.presenter = presenter
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
