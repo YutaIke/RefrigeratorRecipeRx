@@ -13,7 +13,6 @@ class ExpirationListViewCell: UITableViewCell {
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var expirationDate: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
