@@ -28,5 +28,10 @@ protocol ExpirationListPresenterProtocol {
 }
 
 class ExpirationListPresenter: ExpirationListPresenterProtocol {
+    let wireframe: ExpirationListWireframeProtocol
+    
+    public required init(wireframe: ExpirationListWireframeProtocol) {
+        self.wireframe = wireframe
+    }
     
 }
