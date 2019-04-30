@@ -24,7 +24,7 @@ import RxSwift
 import RxCocoa
 
 protocol ExpirationListPresenterProtocol {
-    
+    func didTapExpirationList()
 }
 
 class ExpirationListPresenter: ExpirationListPresenterProtocol {
@@ -34,4 +34,7 @@ class ExpirationListPresenter: ExpirationListPresenterProtocol {
         self.wireframe = wireframe
     }
     
+    func didTapExpirationList() {
+        wireframe.showDetail()
+    }
 }
