@@ -154,6 +154,7 @@
 		59A99FD32270A6EB00F63A3B /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				59A99FF5227931A400F63A3B /* Translater */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -267,6 +268,13 @@
 				59A99FEF2277440900F63A3B /* ExpirationListWireframe.swift */,
 			);
 			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		59A99FF5227931A400F63A3B /* Translater */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Translater;
 			sourceTree = "<group>";
 		};
 		59BCE6BE226F55DE00011595 = {
