@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct ExpirationListModels {
-    var expirationsList: [ExpirationListModel]
+struct ExpirationModels {
+    var expirationItemsList: [ExpirationItemModel]
 }
 
-struct ExpirationListModel: ExpirationListViewModelProtocol {
+struct ExpirationItemModel: ExpirationListViewModelProtocol {
     var productName: String
     var expirationDate: String
  

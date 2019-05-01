@@ -18,7 +18,9 @@
 		59A99FED22773A9100F63A3B /* ExpirationListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FEC22773A9100F63A3B /* ExpirationListBuilder.swift */; };
 		59A99FF02277440900F63A3B /* ExpirationListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FEF2277440900F63A3B /* ExpirationListWireframe.swift */; };
 		59A99FF222792E5800F63A3B /* ExpirationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FF122792E5800F63A3B /* ExpirationListViewModel.swift */; };
-		59A99FF422792F4900F63A3B /* ExpirationListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FF322792F4900F63A3B /* ExpirationListModel.swift */; };
+		59A99FF422792F4900F63A3B /* ExpirationItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FF322792F4900F63A3B /* ExpirationItemModel.swift */; };
+		59A99FF72279320300F63A3B /* ExpirationListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FF62279320300F63A3B /* ExpirationListRepository.swift */; };
+		59A99FF9227934EA00F63A3B /* ExpirationItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FF8227934EA00F63A3B /* ExpirationItemEntity.swift */; };
 		59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CA226F55DE00011595 /* AppDelegate.swift */; };
 		59BCE6CD226F55DE00011595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CC226F55DE00011595 /* ViewController.swift */; };
 		59BCE6D2226F55DF00011595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6D1226F55DF00011595 /* Assets.xcassets */; };
@@ -51,7 +53,9 @@
 		59A99FEC22773A9100F63A3B /* ExpirationListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListBuilder.swift; sourceTree = "<group>"; };
 		59A99FEF2277440900F63A3B /* ExpirationListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListWireframe.swift; sourceTree = "<group>"; };
 		59A99FF122792E5800F63A3B /* ExpirationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListViewModel.swift; sourceTree = "<group>"; };
-		59A99FF322792F4900F63A3B /* ExpirationListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListModel.swift; sourceTree = "<group>"; };
+		59A99FF322792F4900F63A3B /* ExpirationItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationItemModel.swift; sourceTree = "<group>"; };
+		59A99FF62279320300F63A3B /* ExpirationListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListRepository.swift; sourceTree = "<group>"; };
+		59A99FF8227934EA00F63A3B /* ExpirationItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationItemEntity.swift; sourceTree = "<group>"; };
 		59BCE6C7226F55DE00011595 /* RefrigeratorRecipeRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefrigeratorRecipeRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BCE6CA226F55DE00011595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59BCE6CC226F55DE00011595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 		59A99FCE2270A6CA00F63A3B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				59A99FF8227934EA00F63A3B /* ExpirationItemEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -139,7 +144,7 @@
 		59A99FD12270A6DE00F63A3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				59A99FF322792F4900F63A3B /* ExpirationListModel.swift */,
+				59A99FF322792F4900F63A3B /* ExpirationItemModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 		59A99FD22270A6E600F63A3B /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				59A99FF62279320300F63A3B /* ExpirationListRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -517,12 +523,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59A99FF422792F4900F63A3B /* ExpirationListModel.swift in Sources */,
+				59A99FF422792F4900F63A3B /* ExpirationItemModel.swift in Sources */,
+				59A99FF9227934EA00F63A3B /* ExpirationItemEntity.swift in Sources */,
 				59A99FE72270B4CD00F63A3B /* ExpirationListViewController.swift in Sources */,
 				59A99FF02277440900F63A3B /* ExpirationListWireframe.swift in Sources */,
 				59BCE6CD226F55DE00011595 /* ViewController.swift in Sources */,
 				59A99FE32270AE7A00F63A3B /* TabBarController.swift in Sources */,
 				59A99FE9227733AA00F63A3B /* ExpirationListPresenter.swift in Sources */,
+				59A99FF72279320300F63A3B /* ExpirationListRepository.swift in Sources */,
 				59A99FF222792E5800F63A3B /* ExpirationListViewModel.swift in Sources */,
 				59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */,
 				59A99FE12270ABAF00F63A3B /* ExpirationListViewCell.swift in Sources */,
