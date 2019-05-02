@@ -10,8 +10,8 @@ import UIKit
 
 struct ExpirationListBuilder {
     func build() -> UIViewController {
-        let wireframe = ExpirationListWireframe()
         let viewController = ExpirationListViewController()
+        let wireframe = ExpirationListWireframe()
         
         let presenter = ExpirationListPresenter(wireframe: wireframe)
         viewController.inject(presenter: presenter)
