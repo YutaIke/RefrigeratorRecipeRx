@@ -10,6 +10,7 @@ import Foundation
 import RxSwift
 
 protocol ExpirationListUseCaseProtocol {
+    func save(_ expirationItem: ExpirationItemModel)
     func loadExpirationList() -> Observable<ExpirationItemModels>
 }
 
@@ -19,7 +20,11 @@ class ExpirationListUseCase: ExpirationListUseCaseProtocol {
     public init(expirationListRepository: ExpirationListRepositoryProtocol){
         self.expirationListRepository = expirationListRepository
     }
-    
+
+    func save(_ expirationItem: ExpirationItemModel) {
+        expirationListRepository.save(ExpirationListTranslater.generate(expirationItemModel: expirationItem))
+    }
+
     func loadExpirationList() -> Observable<ExpirationItemModels>{
         let expirationList = expirationListRepository.getAllExpirationItemList()
         
