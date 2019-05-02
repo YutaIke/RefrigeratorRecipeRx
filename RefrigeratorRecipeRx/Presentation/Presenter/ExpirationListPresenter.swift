@@ -28,10 +28,13 @@ protocol ExpirationListPresenterProtocol {
 }
 
 class ExpirationListPresenter: ExpirationListPresenterProtocol {
+
     let wireframe: ExpirationListWireframeProtocol
+    let usecase: ExpirationListUseCaseProtocol
     
-    public required init(wireframe: ExpirationListWireframeProtocol) {
+    public required init(wireframe: ExpirationListWireframeProtocol, usecase: ExpirationListUseCaseProtocol) {
         self.wireframe = wireframe
+        self.usecase = usecase
     }
     
     func didTapExpirationList() {
