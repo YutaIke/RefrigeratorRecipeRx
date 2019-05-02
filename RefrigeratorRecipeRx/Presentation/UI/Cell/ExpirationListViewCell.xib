@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBi-Mk-WOu" userLabel="ProductName">
-                        <rect key="frame" x="15" y="10" width="200" height="23.5"/>
+                        <rect key="frame" x="20" y="10" width="200" height="23.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="200" id="lK2-Vq-zCv"/>
                         </constraints>
@@ -28,7 +28,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="賞味期限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsk-rW-OTl" userLabel="ExpirationDate">
-                        <rect key="frame" x="235" y="10" width="70" height="23.5"/>
+                        <rect key="frame" x="225" y="10" width="70" height="23.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -37,8 +37,8 @@
                 <constraints>
                     <constraint firstItem="yBi-Mk-WOu" firstAttribute="top" secondItem="Qyz-SL-BvT" secondAttribute="top" constant="10" id="1xX-RE-wvN"/>
                     <constraint firstAttribute="bottom" secondItem="yBi-Mk-WOu" secondAttribute="bottom" constant="10" id="5wu-a6-Aup"/>
-                    <constraint firstItem="yBi-Mk-WOu" firstAttribute="leading" secondItem="Qyz-SL-BvT" secondAttribute="leading" constant="15" id="Zhy-lM-9IQ"/>
-                    <constraint firstAttribute="trailing" secondItem="rsk-rW-OTl" secondAttribute="trailing" constant="15" id="jsa-Je-AlW"/>
+                    <constraint firstItem="yBi-Mk-WOu" firstAttribute="leading" secondItem="Qyz-SL-BvT" secondAttribute="leading" constant="20" id="Zhy-lM-9IQ"/>
+                    <constraint firstAttribute="trailing" secondItem="rsk-rW-OTl" secondAttribute="trailing" constant="25" id="jsa-Je-AlW"/>
                     <constraint firstAttribute="bottom" secondItem="rsk-rW-OTl" secondAttribute="bottom" constant="10" id="qTH-di-AFd"/>
                     <constraint firstItem="rsk-rW-OTl" firstAttribute="top" secondItem="Qyz-SL-BvT" secondAttribute="top" constant="10" id="vha-tN-bdS"/>
                 </constraints>
