@@ -9,6 +9,10 @@
 import Foundation
 import RealmSwift
 
+class ExpirationItemEntities {
+    var expirationsList: [ExpirationItemEntity] = []
+}
+
 class ExpirationItemEntity: Object, Codable {
     @objc dynamic var id = 0
     @objc dynamic var productName = ""

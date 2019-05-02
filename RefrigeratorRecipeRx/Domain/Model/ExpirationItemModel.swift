@@ -8,14 +8,16 @@
 
 import Foundation
 
-struct ExpirationModels {
-    var expirationItemsList: [ExpirationItemModel]
+struct ExpirationItemModels {
+    var expirationItemsList: [ExpirationItemModel] = []
 }
 
 struct ExpirationItemModel: ExpirationListViewModelProtocol {
     var productName: String
     var expirationDate: String
  
-    // TODO: init処理
-//    init(rowExpirationListModel: ExpirationItemEntity)
+    init(expirationItemEntity: ExpirationItemEntity) {
+        self.productName = expirationItemEntity.productName
+        self.expirationDate = expirationItemEntity.expirationDate
+    }
 }
