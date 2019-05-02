@@ -17,4 +17,9 @@ class ExpirationListViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
+    func bind(from expirationItemModel: ExpirationItemModel) {
+        productName.text = expirationItemModel.productName
+        expirationDate.text = expirationItemModel.expirationDate
+    }
+    
 }
