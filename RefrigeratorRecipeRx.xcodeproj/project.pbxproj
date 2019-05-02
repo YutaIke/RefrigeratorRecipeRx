@@ -22,6 +22,7 @@
 		59A99FF72279320300F63A3B /* ExpirationListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FF62279320300F63A3B /* ExpirationListRepository.swift */; };
 		59A99FF9227934EA00F63A3B /* ExpirationItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FF8227934EA00F63A3B /* ExpirationItemEntity.swift */; };
 		59A99FFB2279376900F63A3B /* ExpirationItemDateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FFA2279376900F63A3B /* ExpirationItemDateStore.swift */; };
+		59A99FFD227A78DE00F63A3B /* ExpirationListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FFC227A78DE00F63A3B /* ExpirationListUseCase.swift */; };
 		59A99FFF227A7EC500F63A3B /* ExpirationListTranslater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FFE227A7EC500F63A3B /* ExpirationListTranslater.swift */; };
 		59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CA226F55DE00011595 /* AppDelegate.swift */; };
 		59BCE6CD226F55DE00011595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CC226F55DE00011595 /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 		59A99FF62279320300F63A3B /* ExpirationListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListRepository.swift; sourceTree = "<group>"; };
 		59A99FF8227934EA00F63A3B /* ExpirationItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationItemEntity.swift; sourceTree = "<group>"; };
 		59A99FFA2279376900F63A3B /* ExpirationItemDateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationItemDateStore.swift; sourceTree = "<group>"; };
+		59A99FFC227A78DE00F63A3B /* ExpirationListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListUseCase.swift; sourceTree = "<group>"; };
 		59A99FFE227A7EC500F63A3B /* ExpirationListTranslater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListTranslater.swift; sourceTree = "<group>"; };
 		59BCE6C7226F55DE00011595 /* RefrigeratorRecipeRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefrigeratorRecipeRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BCE6CA226F55DE00011595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				59A99FF5227931A400F63A3B /* Translater */,
+				59A99FFC227A78DE00F63A3B /* ExpirationListUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				59A99FF72279320300F63A3B /* ExpirationListRepository.swift in Sources */,
 				59A99FF222792E5800F63A3B /* ExpirationListViewModel.swift in Sources */,
 				59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */,
+				59A99FFD227A78DE00F63A3B /* ExpirationListUseCase.swift in Sources */,
 				59A99FFB2279376900F63A3B /* ExpirationItemDateStore.swift in Sources */,
 				59A99FE12270ABAF00F63A3B /* ExpirationListViewCell.swift in Sources */,
 				59A99FED22773A9100F63A3B /* ExpirationListBuilder.swift in Sources */,

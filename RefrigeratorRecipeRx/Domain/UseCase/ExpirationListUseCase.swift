@@ -7,3 +7,24 @@
 //
 
 import Foundation
+import RxSwift
+
+protocol ExpirationListUseCaseProtocol {
+    func loadExpirationList() -> Observable<ExpirationItemModels>
+}
+
+class ExpirationListUseCase: ExpirationListUseCaseProtocol {
+    private let expirationListRepository: ExpirationListRepositoryProtocol
+    
+    public init(expirationListRepository: ExpirationListRepositoryProtocol){
+        self.expirationListRepository = expirationListRepository
+    }
+    
+    func loadExpirationList() -> Observable<ExpirationItemModels>{
+        let expirationList = expirationListRepository.getAllExpirationItemList()
+        
+        return expirationList.map { ExpirationListTranslater.generate(expirationItemEntities: $0) }
+    }
+    
+    
+}
