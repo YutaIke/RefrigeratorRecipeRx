@@ -24,6 +24,7 @@
 		59A99FFB2279376900F63A3B /* ExpirationItemDateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FFA2279376900F63A3B /* ExpirationItemDateStore.swift */; };
 		59A99FFD227A78DE00F63A3B /* ExpirationListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FFC227A78DE00F63A3B /* ExpirationListUseCase.swift */; };
 		59A99FFF227A7EC500F63A3B /* ExpirationListTranslater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FFE227A7EC500F63A3B /* ExpirationListTranslater.swift */; };
+		59A9A005227AFDA700F63A3B /* ExpirationListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A9A004227AFDA700F63A3B /* ExpirationListPresenterTests.swift */; };
 		59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CA226F55DE00011595 /* AppDelegate.swift */; };
 		59BCE6CD226F55DE00011595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BCE6CC226F55DE00011595 /* ViewController.swift */; };
 		59BCE6D2226F55DF00011595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59BCE6D1226F55DF00011595 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		59A99FFA2279376900F63A3B /* ExpirationItemDateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationItemDateStore.swift; sourceTree = "<group>"; };
 		59A99FFC227A78DE00F63A3B /* ExpirationListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListUseCase.swift; sourceTree = "<group>"; };
 		59A99FFE227A7EC500F63A3B /* ExpirationListTranslater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListTranslater.swift; sourceTree = "<group>"; };
+		59A9A004227AFDA700F63A3B /* ExpirationListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListPresenterTests.swift; sourceTree = "<group>"; };
 		59BCE6C7226F55DE00011595 /* RefrigeratorRecipeRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefrigeratorRecipeRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BCE6CA226F55DE00011595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59BCE6CC226F55DE00011595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -292,6 +294,22 @@
 			path = Translater;
 			sourceTree = "<group>";
 		};
+		59A9A002227AFCF500F63A3B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				59A9A003227AFD7B00F63A3B /* Presenter */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		59A9A003227AFD7B00F63A3B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				59A9A004227AFDA700F63A3B /* ExpirationListPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		59BCE6BE226F55DE00011595 = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +350,7 @@
 		59BCE6DE226F55DF00011595 /* RefrigeratorRecipeRxTests */ = {
 			isa = PBXGroup;
 			children = (
+				59A9A002227AFCF500F63A3B /* Presentation */,
 				59BCE6DF226F55DF00011595 /* RefrigeratorRecipeRxTests.swift */,
 				59BCE6E1226F55DF00011595 /* Info.plist */,
 			);
@@ -379,6 +398,7 @@
 				59BCE6D7226F55DF00011595 /* Sources */,
 				59BCE6D8226F55DF00011595 /* Frameworks */,
 				59BCE6D9226F55DF00011595 /* Resources */,
+				CEB20A4177BFEF633C89915D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -525,6 +545,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CEB20A4177BFEF633C89915D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RefrigeratorRecipeRxTests/Pods-RefrigeratorRecipeRxTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RefrigeratorRecipeRxTests/Pods-RefrigeratorRecipeRxTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -555,6 +601,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59BCE6E0226F55DF00011595 /* RefrigeratorRecipeRxTests.swift in Sources */,
+				59A9A005227AFDA700F63A3B /* ExpirationListPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
