@@ -12,7 +12,7 @@
         <!--賞味期限-->
         <scene sceneID="QIR-Qd-p5Z">
             <objects>
-                <tableViewController storyboardIdentifier="ExpirationListView" title="賞味期限" id="PZf-9b-CfG" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ExpirationListView" title="賞味期限" id="PZf-9b-CfG" customClass="ExpirationListViewController" customModule="RefrigeratorRecipeRx" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="k6z-x2-zEv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,6 +34,9 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="tI5-Q6-iXX"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="k6z-x2-zEv" id="oFT-Q0-cfw"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtF-Ra-Jow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

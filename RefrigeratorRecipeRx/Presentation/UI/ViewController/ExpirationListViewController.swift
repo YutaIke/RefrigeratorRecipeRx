@@ -14,6 +14,8 @@ protocol ExpirationListProtocol: class {
 
 class ExpirationListViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+    
     var presenter: ExpirationListPresenterProtocol?
     
     public func inject(presenter: ExpirationListPresenter) {
@@ -22,6 +24,10 @@ class ExpirationListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "ExpirationListViewCell", bundle: nil), forCellReuseIdentifier: "ExpirationListViewCell")
     }
 }
 
