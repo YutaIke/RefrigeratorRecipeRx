@@ -13,8 +13,8 @@ struct ExpirationItemModels {
 }
 
 struct ExpirationItemModel: ExpirationListViewModelProtocol {
-    var productName: String
-    var expirationDate: String
+    var productName: String = ""
+    var expirationDate: String = ""
  
     init(expirationItemEntity: ExpirationItemEntity) {
         self.productName = expirationItemEntity.productName

@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Entity -> Modelを生成する処理
+ * Entity <-> Modelを生成する処理
  **/
 class ExpirationListTranslater {
     static func generate(expirationItemEntities: [ExpirationItemEntity]) -> ExpirationItemModels {
@@ -20,5 +20,12 @@ class ExpirationListTranslater {
             models.expirationItemsList.append(model)
         }
         return models
+    }
+    
+    static func generate(expirationItemModel: ExpirationItemModel) -> ExpirationItemEntity {
+        let entity = ExpirationItemEntity()
+        entity.productName = expirationItemModel.productName
+        entity.expirationDate = expirationItemModel.expirationDate
+        return entity
     }
 }
