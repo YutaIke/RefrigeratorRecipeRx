@@ -11,7 +11,7 @@ import RxSwift
 import RealmSwift
 
 protocol ExpirationItemDataStoreProtocol {
-    func save(_ expirationItem: ExpirationItemModel)
+    func save(_ expirationItem: ExpirationItemEntity)
     func getAllExpirationItems() -> Observable<[ExpirationItemEntity]>
 }
 
@@ -23,10 +23,10 @@ class ExpirationItemDataStore: ExpirationItemDataStoreProtocol {
         return Observable.just(expirationDateObj)
     }
 
-    func save(_ expirationItem: ExpirationItemModel) {
+    func save(_ expirationItem: ExpirationItemEntity) {
         let realm = try! Realm()
         try! realm.write {
-            realm.add(ExpirationListTranslater.generate(expirationItemModel: expirationItem), update: true)
+            realm.add(expirationItem, update: true)
         }
     }
 }
