@@ -24,20 +24,43 @@ import RxSwift
 import RxCocoa
 
 protocol ExpirationListPresenterProtocol {
+    func loadExpirationList()
     func didTapExpirationList()
 }
 
 class ExpirationListPresenter: ExpirationListPresenterProtocol {
 
+    weak var viewInput: ExpirationListViewInputProtocol?
     let wireframe: ExpirationListWireframeProtocol
-    let usecase: ExpirationListUseCaseProtocol
+    let useCase: ExpirationListUseCaseProtocol
     
-    public required init(wireframe: ExpirationListWireframeProtocol, usecase: ExpirationListUseCaseProtocol) {
+    fileprivate let disposeBag = DisposeBag()
+    
+    public required init(viewInput: ExpirationListViewInputProtocol, wireframe: ExpirationListWireframeProtocol, useCase: ExpirationListUseCaseProtocol) {
         self.wireframe = wireframe
-        self.usecase = usecase
+        self.useCase = useCase
+    }
+
+    func loadExpirationList() {
+        useCase.loadExpirationList()
+            .subscribe(
+                onNext: { [weak self] expirations in
+                    
+                }, onError: { [weak self] error in
+                
+                }, onCompleted: nil, onDisposed: nil)
+            .disposed(by: disposeBag)
+        
     }
     
     func didTapExpirationList() {
         wireframe.showDetail()
+    }
+}
+
+// MARK: Private
+extension ExpirationListPresenter {
+    fileprivate func loadedExpirationItemModels(models: ExpirationItemModels) {
+        
     }
 }
