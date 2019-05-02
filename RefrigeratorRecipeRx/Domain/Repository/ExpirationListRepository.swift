@@ -10,17 +10,17 @@ import Foundation
 import RxSwift
 
 protocol ExpirationListRepositoryProtocol {
-//    func getExpirations() -> Observable<ExpirationEntity>
+    func getAllExpirationItemList() -> Observable<[ExpirationItemEntity]>
 }
 
 struct ExpirationListRepository: ExpirationListRepositoryProtocol {
-//    private let dataStore: ExpirationItemDataStore
+    private let dataStore: ExpirationItemDataStoreProtocol
     
-//    public init(dataStore: ExpirationItemDataStore) {
-//        self.dataStore = dataStore
-//    }
+    public init(dataStore: ExpirationItemDataStore) {
+        self.dataStore = dataStore
+    }
     
-//    func getExpirations() -> Observable<[ExpirationItemEntity]> {
-//        return dataStore.getExpirations()
-//    }}
+    func getAllExpirationItemList() -> Observable<[ExpirationItemEntity]> {
+        return dataStore.getAllExpirationItems()
+    }
 }
