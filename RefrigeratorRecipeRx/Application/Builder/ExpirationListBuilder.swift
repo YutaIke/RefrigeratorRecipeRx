@@ -12,8 +12,13 @@ struct ExpirationListBuilder {
     func build() -> UIViewController {
         let viewController = ExpirationListViewController()
         let wireframe = ExpirationListWireframe()
+        let useCase = ExpirationListUseCase(
+            expirationListRepository: ExpirationListRepository(
+                dataStore: ExpirationItemDataStore()
+            )
+        )
         
-        let presenter = ExpirationListPresenter(wireframe: wireframe)
+        let presenter = ExpirationListPresenter(viewInput: viewController, wireframe: wireframe, useCase: useCase)
         viewController.inject(presenter: presenter)
         wireframe.viewController = viewController
         
