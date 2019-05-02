@@ -10,7 +10,7 @@ import UIKit
 
 struct ExpirationListBuilder {
     func build() -> UIViewController {
-        let viewController = ExpirationListViewController()
+        let viewController = UIStoryboard(name: "ExpirationListView", bundle: nil).instantiateViewController(withIdentifier: "ExpirationListView") as! ExpirationListViewController
         let wireframe = ExpirationListWireframe()
         let useCase = ExpirationListUseCase(
             expirationListRepository: ExpirationListRepository(
