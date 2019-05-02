@@ -8,8 +8,8 @@
 
 import UIKit
 
-protocol ExpirationListProtocol: class {
-    
+protocol ExpirationListViewInputProtocol: class {
+    func setExpirationItemModels(_: ExpirationItemModels)
 }
 
 class ExpirationListViewController: UIViewController {
@@ -17,6 +17,7 @@ class ExpirationListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var presenter: ExpirationListPresenterProtocol?
+    var expirations: [ExpirationItemModel] = []
     
     public func inject(presenter: ExpirationListPresenter) {
         self.presenter = presenter
@@ -31,21 +32,34 @@ class ExpirationListViewController: UIViewController {
     }
 }
 
-extension ExpirationListViewController: UITableViewDelegate, UITableViewDataSource {
+// MARK: ExpirationListViewInputProtocol
+extension ExpirationListViewController: ExpirationListViewInputProtocol {
+    func setExpirationItemModels(_ expirationItemModels: ExpirationItemModels) {
+        expirations = expirationItemModels.expirationItemsList
+        tableView.reloadData()
+    }
+}
+
+// MARK: UITableViewDataSource
+extension ExpirationListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // TODO: tableViewの実装
         return 1
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // TODO: tableViewの実装
         return UITableViewCell()
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+
         presenter?.didTapExpirationList()
     }
-    
+}
+
+// MARK: UITableViewDelegate
+extension ExpirationListViewController: UITableViewDelegate {
+
 }
