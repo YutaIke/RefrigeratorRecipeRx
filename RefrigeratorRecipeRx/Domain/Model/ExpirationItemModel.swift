@@ -16,6 +16,8 @@ struct ExpirationItemModel: ExpirationListViewModelProtocol {
     var productName: String = ""
     var expirationDate: String = ""
  
+    init() {}
+    
     init(expirationItemEntity: ExpirationItemEntity) {
         self.productName = expirationItemEntity.productName
         self.expirationDate = expirationItemEntity.expirationDate
