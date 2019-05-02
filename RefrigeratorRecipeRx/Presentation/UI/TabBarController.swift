@@ -13,6 +13,9 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let expirationListViewController = ExpirationListBuilder().build()
+        self.viewControllers = [UINavigationController(rootViewController: expirationListViewController)]
     }
     
     override func didReceiveMemoryWarning() {
