@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--賞味期限-->
         <scene sceneID="8QT-ND-kFF">
             <objects>
                 <navigationController id="ULz-3Y-mCN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="IjY-kf-5vQ"/>
+                    <tabBarItem key="tabBarItem" title="賞味期限" id="IjY-kf-5vQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2XJ-CG-h1e">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

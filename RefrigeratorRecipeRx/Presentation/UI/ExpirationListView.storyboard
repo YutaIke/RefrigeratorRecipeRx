@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="PZf-9b-CfG" id="CFG-Yg-0sw"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="tI5-Q6-iXX"/>
+                    <tabBarItem key="tabBarItem" title="賞味期限" id="tI5-Q6-iXX"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="k6z-x2-zEv" id="oFT-Q0-cfw"/>
