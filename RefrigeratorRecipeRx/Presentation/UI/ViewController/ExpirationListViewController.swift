@@ -29,6 +29,13 @@ class ExpirationListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ExpirationListViewCell", bundle: nil), forCellReuseIdentifier: "ExpirationListViewCell")
+        
+        // ボタン作成
+        let addButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: nil)
+            
+        // ナビゲーションバーの右側にボタン付与
+        self.navigationItem.setRightBarButtonItems([addButton], animated: true)
+        self.tableView.separatorInset = UIEdgeInsets.zero
     }
 }
 
