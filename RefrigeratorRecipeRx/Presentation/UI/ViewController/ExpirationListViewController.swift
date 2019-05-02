@@ -36,6 +36,11 @@ class ExpirationListViewController: UIViewController {
         // ナビゲーションバーの右側にボタン付与
         self.navigationItem.setRightBarButtonItems([addButton], animated: true)
         self.tableView.separatorInset = UIEdgeInsets.zero
+        presenter?.loadExpirationList()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
 }
 
@@ -51,12 +56,13 @@ extension ExpirationListViewController: ExpirationListViewInputProtocol {
 extension ExpirationListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // TODO: tableViewの実装
-        return 1
+        return expirations.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // TODO: tableViewの実装
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExpirationListViewCell", for: indexPath) as! ExpirationListViewCell
+        cell.bind(from: expirations[indexPath.row])
+        return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
