@@ -12,7 +12,7 @@ protocol ExpirationListWireframeProtocol {
     var viewController: ExpirationListViewController? { get set }
     
     func showDetail()
-    func moveToAddScreen()
+    func moveToRegisterView()
 }
 
 class ExpirationListWireframe: ExpirationListWireframeProtocol {
@@ -31,8 +31,9 @@ class ExpirationListWireframe: ExpirationListWireframeProtocol {
 //        viewController?.present(navigationController, animated: true, completion: nil)
     }
 
-    func moveToAddScreen() {
-        
+    func moveToRegisterView() {
+        let nextViewController = RegisterExpirationItemBuilder().build()
+        viewController?.navigationController?.pushViewController(nextViewController, animated: true)
     }
 
 }
