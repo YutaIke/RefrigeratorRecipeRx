@@ -15,6 +15,7 @@
 		5943E1BB2280344E00B248AD /* ExpirationListTranslaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1BA2280344E00B248AD /* ExpirationListTranslaterTests.swift */; };
 		5943E1BF228034B400B248AD /* ExpirationItemEntityStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1BE228034B400B248AD /* ExpirationItemEntityStub.swift */; };
 		5943E1C12280384500B248AD /* RegisterExpirationItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5943E1C02280384500B248AD /* RegisterExpirationItem.storyboard */; };
+		5943E1C32280389D00B248AD /* RegisterExpirationItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1C22280389D00B248AD /* RegisterExpirationItemViewController.swift */; };
 		59A99FDF2270A7F500F63A3B /* ExpirationListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59A99FDE2270A7F500F63A3B /* ExpirationListViewCell.xib */; };
 		59A99FE12270ABAF00F63A3B /* ExpirationListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FE02270ABAF00F63A3B /* ExpirationListViewCell.swift */; };
 		59A99FE32270AE7A00F63A3B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FE22270AE7A00F63A3B /* TabBarController.swift */; };
@@ -61,6 +62,7 @@
 		5943E1BA2280344E00B248AD /* ExpirationListTranslaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListTranslaterTests.swift; sourceTree = "<group>"; };
 		5943E1BE228034B400B248AD /* ExpirationItemEntityStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationItemEntityStub.swift; sourceTree = "<group>"; };
 		5943E1C02280384500B248AD /* RegisterExpirationItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterExpirationItem.storyboard; sourceTree = "<group>"; };
+		5943E1C22280389D00B248AD /* RegisterExpirationItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterExpirationItemViewController.swift; sourceTree = "<group>"; };
 		59A99FC92270A68700F63A3B /* ExpirationListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExpirationListView.storyboard; sourceTree = "<group>"; };
 		59A99FCA2270A68700F63A3B /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		59A99FDE2270A7F500F63A3B /* ExpirationListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpirationListViewCell.xib; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				59A99FE62270B4CD00F63A3B /* ExpirationListViewController.swift */,
+				5943E1C22280389D00B248AD /* RegisterExpirationItemViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -675,6 +678,7 @@
 				59A99FF72279320300F63A3B /* ExpirationListRepository.swift in Sources */,
 				59A99FF222792E5800F63A3B /* ExpirationListViewModel.swift in Sources */,
 				59BCE6CB226F55DE00011595 /* AppDelegate.swift in Sources */,
+				5943E1C32280389D00B248AD /* RegisterExpirationItemViewController.swift in Sources */,
 				59A99FFD227A78DE00F63A3B /* ExpirationListUseCase.swift in Sources */,
 				59A99FFB2279376900F63A3B /* ExpirationItemDataStore.swift in Sources */,
 				59A99FE12270ABAF00F63A3B /* ExpirationListViewCell.swift in Sources */,
