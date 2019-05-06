@@ -47,12 +47,12 @@ class ExpirationListPresenter: ExpirationListPresenterProtocol {
         useCase.loadExpirationList()
             .subscribe(
                 onNext: { [weak self] expirations in
-                    
+                    self?.loadedExpirationItemModels(models: expirations)
                 }, onError: { [weak self] error in
-                
+                    // TODO: エラー処理
+                    print("Error")
                 }, onCompleted: nil, onDisposed: nil)
-            .disposed(by: disposeBag)
-        
+            .disposed(by: disposeBag)        
     }
     
     func didTapExpirationList() {
