@@ -31,16 +31,21 @@ class ExpirationListViewController: UIViewController {
         tableView.register(UINib(nibName: "ExpirationListViewCell", bundle: nil), forCellReuseIdentifier: "ExpirationListViewCell")
         
         // ボタン作成
-        let addButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: nil)
+        let addButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(moveToRegisterView(sender:)))
             
         // ナビゲーションバーの右側にボタン付与
         self.navigationItem.setRightBarButtonItems([addButton], animated: true)
         self.tableView.separatorInset = UIEdgeInsets.zero
+    
         presenter?.loadExpirationList()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    @objc internal func moveToRegisterView(sender: UIButton) {
+        presenter?.moveToRegisterView()
     }
 }
 
