@@ -26,6 +26,7 @@ import RxCocoa
 protocol ExpirationListPresenterProtocol {
     func loadExpirationList()
     func didTapExpirationList()
+    func moveToRegisterView()
 }
 
 class ExpirationListPresenter: ExpirationListPresenterProtocol {
@@ -56,6 +57,10 @@ class ExpirationListPresenter: ExpirationListPresenterProtocol {
     
     func didTapExpirationList() {
         wireframe.showDetail()
+    }
+    
+    func moveToRegisterView() {
+        wireframe.moveToRegisterView()
     }
 }
 
