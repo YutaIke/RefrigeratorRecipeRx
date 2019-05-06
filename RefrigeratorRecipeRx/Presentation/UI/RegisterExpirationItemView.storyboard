@@ -13,7 +13,7 @@
         <!--登録-->
         <scene sceneID="kuj-q8-Miw">
             <objects>
-                <viewController storyboardIdentifier="AddExpirationDateView" title="登録" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mfo-q4-DVn" customClass="RegisterExpirationItemViewController" customModule="RefrigeratorRecipeRx" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterExpirationItemView" title="登録" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mfo-q4-DVn" customClass="RegisterExpirationItemViewController" customModule="RefrigeratorRecipeRx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vC0-d9-19y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
