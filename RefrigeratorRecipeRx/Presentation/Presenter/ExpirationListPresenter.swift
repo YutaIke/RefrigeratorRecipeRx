@@ -37,6 +37,7 @@ class ExpirationListPresenter: ExpirationListPresenterProtocol {
     fileprivate let disposeBag = DisposeBag()
     
     public required init(viewInput: ExpirationListViewInputProtocol, wireframe: ExpirationListWireframeProtocol, useCase: ExpirationListUseCaseProtocol) {
+        self.viewInput = viewInput
         self.wireframe = wireframe
         self.useCase = useCase
     }
