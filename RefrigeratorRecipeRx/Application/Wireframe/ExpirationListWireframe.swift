@@ -12,10 +12,17 @@ protocol ExpirationListWireframeProtocol {
     var viewController: ExpirationListViewController? { get set }
     
     func showDetail()
+    func moveToAddScreen()
 }
 
 class ExpirationListWireframe: ExpirationListWireframeProtocol {
     weak var viewController: ExpirationListViewController?
+    
+    init(){}
+    
+    init(viewController: ExpirationListViewController) {
+        self.viewController = viewController
+    }
     
     func showDetail() {
         // TODO: 詳細画面遷移
@@ -23,6 +30,9 @@ class ExpirationListWireframe: ExpirationListWireframeProtocol {
 //        let navigationController = UINavigationController(rootViewController: nextViewController)
 //        viewController?.present(navigationController, animated: true, completion: nil)
     }
-    
-    
+
+    func moveToAddScreen() {
+        
+    }
+
 }
