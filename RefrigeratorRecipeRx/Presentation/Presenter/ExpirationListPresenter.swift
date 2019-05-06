@@ -67,6 +67,6 @@ class ExpirationListPresenter: ExpirationListPresenterProtocol {
 // MARK: Private
 extension ExpirationListPresenter {
     fileprivate func loadedExpirationItemModels(models: ExpirationItemModels) {
-        
+        self.viewInput?.setExpirationItemModels(models)
     }
 }
