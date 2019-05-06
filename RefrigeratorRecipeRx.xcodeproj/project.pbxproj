@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3F4018D48D55EEEA930E11EA /* Pods_RefrigeratorRecipeRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58B093900790E3F3F1D39F3 /* Pods_RefrigeratorRecipeRx.framework */; };
+		5943E1AB22801C9800B248AD /* ExpirationListViewContollerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1AA22801C9800B248AD /* ExpirationListViewContollerSpy.swift */; };
+		5943E1AF22801E2000B248AD /* ExpirationListUseCaseStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1AE22801E2000B248AD /* ExpirationListUseCaseStub.swift */; };
+		5943E1B2228020FC00B248AD /* ExpirationItemModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1B1228020FC00B248AD /* ExpirationItemModelStub.swift */; };
 		59A99FDF2270A7F500F63A3B /* ExpirationListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59A99FDE2270A7F500F63A3B /* ExpirationListViewCell.xib */; };
 		59A99FE12270ABAF00F63A3B /* ExpirationListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FE02270ABAF00F63A3B /* ExpirationListViewCell.swift */; };
 		59A99FE32270AE7A00F63A3B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A99FE22270AE7A00F63A3B /* TabBarController.swift */; };
@@ -47,6 +50,9 @@
 		1D42A9167D9D12361308AB08 /* Pods-RefrigeratorRecipeRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefrigeratorRecipeRx.release.xcconfig"; path = "Pods/Target Support Files/Pods-RefrigeratorRecipeRx/Pods-RefrigeratorRecipeRx.release.xcconfig"; sourceTree = "<group>"; };
 		3F13AFF5C6A9D8B60E157D30 /* Pods_RefrigeratorRecipeRxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RefrigeratorRecipeRxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E414C7DD6A2F3D17F9D35A /* Pods-RefrigeratorRecipeRxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefrigeratorRecipeRxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RefrigeratorRecipeRxTests/Pods-RefrigeratorRecipeRxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5943E1AA22801C9800B248AD /* ExpirationListViewContollerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListViewContollerSpy.swift; sourceTree = "<group>"; };
+		5943E1AE22801E2000B248AD /* ExpirationListUseCaseStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationListUseCaseStub.swift; sourceTree = "<group>"; };
+		5943E1B1228020FC00B248AD /* ExpirationItemModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationItemModelStub.swift; sourceTree = "<group>"; };
 		59A99FC92270A68700F63A3B /* ExpirationListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExpirationListView.storyboard; sourceTree = "<group>"; };
 		59A99FCA2270A68700F63A3B /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		59A99FDE2270A7F500F63A3B /* ExpirationListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpirationListViewCell.xib; sourceTree = "<group>"; };
@@ -105,6 +111,47 @@
 				3F13AFF5C6A9D8B60E157D30 /* Pods_RefrigeratorRecipeRxTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5943E1A822801C5300B248AD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5943E1A922801C6400B248AD /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5943E1A922801C6400B248AD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5943E1AA22801C9800B248AD /* ExpirationListViewContollerSpy.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5943E1AC22801DEF00B248AD /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5943E1B0228020DD00B248AD /* Model */,
+				5943E1AD22801DF600B248AD /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5943E1AD22801DF600B248AD /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				5943E1AE22801E2000B248AD /* ExpirationListUseCaseStub.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		5943E1B0228020DD00B248AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5943E1B1228020FC00B248AD /* ExpirationItemModelStub.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		59A99FCC2270A6B700F63A3B /* Date */ = {
@@ -298,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				59A9A003227AFD7B00F63A3B /* Presenter */,
+				5943E1A822801C5300B248AD /* UI */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -350,6 +398,7 @@
 		59BCE6DE226F55DF00011595 /* RefrigeratorRecipeRxTests */ = {
 			isa = PBXGroup;
 			children = (
+				5943E1AC22801DEF00B248AD /* Domain */,
 				59A9A002227AFCF500F63A3B /* Presentation */,
 				59BCE6DF226F55DF00011595 /* RefrigeratorRecipeRxTests.swift */,
 				59BCE6E1226F55DF00011595 /* Info.plist */,
@@ -479,11 +528,11 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RefrigeratorRecipeRx/Pods-RefrigeratorRecipeRx-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RefrigeratorRecipeRx/Pods-RefrigeratorRecipeRx-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -492,13 +541,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RefrigeratorRecipeRx/Pods-RefrigeratorRecipeRx-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RefrigeratorRecipeRx/Pods-RefrigeratorRecipeRx-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5C66C80532DE3CC6F2A858A1 /* [CP] Check Pods Manifest.lock */ = {
@@ -553,22 +602,22 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RefrigeratorRecipeRxTests/Pods-RefrigeratorRecipeRxTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-RefrigeratorRecipeRxTests/Pods-RefrigeratorRecipeRxTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RefrigeratorRecipeRxTests/Pods-RefrigeratorRecipeRxTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RefrigeratorRecipeRxTests/Pods-RefrigeratorRecipeRxTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -600,8 +649,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5943E1AF22801E2000B248AD /* ExpirationListUseCaseStub.swift in Sources */,
 				59BCE6E0226F55DF00011595 /* RefrigeratorRecipeRxTests.swift in Sources */,
 				59A9A005227AFDA700F63A3B /* ExpirationListPresenterTests.swift in Sources */,
+				5943E1AB22801C9800B248AD /* ExpirationListViewContollerSpy.swift in Sources */,
+				5943E1B2228020FC00B248AD /* ExpirationItemModelStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,7 +837,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41E414C7DD6A2F3D17F9D35A /* Pods-RefrigeratorRecipeRxTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VP52742XZ8;
@@ -807,7 +859,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A62EBB241C8B94E4C804756F /* Pods-RefrigeratorRecipeRxTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VP52742XZ8;
