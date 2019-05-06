@@ -7,20 +7,33 @@
 //
 
 import XCTest
+@testable import RefrigeratorRecipeRx
+import RxSwift
 
 class ExpirationListPresenterTests: XCTestCase {
+    
+    let viewInputSpy = ExpirationListViewContollerSpy()
+    let wireframe = ExpirationListWireframe()
+    let useCaseStub = ExpirationListUseCaseStub()
+    
+    var presenter: ExpirationListPresenterProtocol!
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        // ここでDI:依存性の注入を行う
+        presenter = ExpirationListPresenter(viewInput: viewInputSpy, wireframe: wireframe, useCase: useCaseStub)
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_loadExpirationList_success_viewInputにExpirationItemModelsがセットされる_count3() {
+        let expectedNumberOfExpirationList = 3
+        let expirationItemModels = ExpirationItemModelStub.createExpirationItemModels(numberOfitems: expectedNumberOfExpirationList)
+        useCaseStub.resultToBeReturned = Observable.just(expirationItemModels)
+        
+        presenter.loadExpirationList()
+        XCTAssertEqual(expectedNumberOfExpirationList, self.viewInputSpy.expirationItemModels.expirationItemsList.count)
     }
 
     func testPerformanceExample() {
