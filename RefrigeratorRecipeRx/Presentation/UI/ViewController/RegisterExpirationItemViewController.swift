@@ -10,4 +10,11 @@ import UIKit
 
 class RegisterExpirationItemViewController: UIViewController {
     
+    @IBOutlet weak var productNameTextField: UITextField!
+    @IBOutlet weak var expirationDateTextField: UITextField!
+    @IBOutlet weak var notificationSwitch: UISwitch!
+    
+    var presenter: RegisterExpirationItemPresenterProtocol?
+    
+    var toolBar: UIToolbar!
 }
