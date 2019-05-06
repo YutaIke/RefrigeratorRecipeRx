@@ -68,6 +68,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmS-Wf-bGM">
                                 <rect key="frame" x="172" y="411" width="31" height="30"/>
                                 <state key="normal" title="追加"/>
+                                <connections>
+                                    <action selector="registerExpirationItem:" destination="mfo-q4-DVn" eventType="touchUpInside" id="XAm-Xa-yhC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,6 +94,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HLE-nf-J3M"/>
                     </view>
+                    <connections>
+                        <outlet property="expirationDateTextField" destination="CUU-Zm-SIa" id="gkP-pP-SVw"/>
+                        <outlet property="notificationSwitch" destination="QPA-jI-TzC" id="EcD-JV-vXh"/>
+                        <outlet property="productNameTextField" destination="P5j-9P-ghu" id="TTc-sf-NAE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5T-mp-Rbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
