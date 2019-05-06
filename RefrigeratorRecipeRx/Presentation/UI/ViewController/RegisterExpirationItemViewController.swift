@@ -22,4 +22,33 @@ class RegisterExpirationItemViewController: UIViewController {
         self.presenter = presenter
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let datePickerView: UIDatePicker = UIDatePicker()
+        datePickerView.datePickerMode = UIDatePicker.Mode.date
+        datePickerView.locale = NSLocale(localeIdentifier: "ja_JP") as Locale
+        expirationDateTextField.inputView = datePickerView
+        datePickerView.addTarget(self, action: #selector(datePickerValueChanged(sender:)), for: UIControl.Event.valueChanged)
+        
+        //datepicker上のtoolbarのdoneボタン
+        toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let toolBarBtn = UIBarButtonItem(title: "完了", style: .plain, target: self, action: #selector(doneBtn))
+        toolBar.items = [toolBarBtn]
+        expirationDateTextField.inputAccessoryView = toolBar
+    }
+    
+    //datepickerが選択されたらtextfieldに表示
+    @objc func datePickerValueChanged(sender:UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat  = "yyyy/MM/dd";
+        expirationDateTextField.text = dateFormatter.string(from: sender.date)
+    }
+
+    //toolbarのdoneボタン
+    @objc func doneBtn(){
+        expirationDateTextField.resignFirstResponder()
+    }
+
 }
