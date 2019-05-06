@@ -39,6 +39,18 @@ class RegisterExpirationItemViewController: UIViewController {
         expirationDateTextField.inputAccessoryView = toolBar
     }
     
+    @IBAction func registerExpirationItem(_ sender: Any) {
+        guard let productName = self.productNameTextField.text,
+            let expirationDate = self.expirationDateTextField.text
+            else {
+                print("ValidationError")
+                return
+        }
+        let expirationItem = ExpirationItemModel(productName: productName, expirationDate: expirationDate)
+        
+        presenter?.save(expirationItem)
+    }
+    
     //datepickerが選択されたらtextfieldに表示
     @objc func datePickerValueChanged(sender:UIDatePicker) {
         let dateFormatter = DateFormatter()
