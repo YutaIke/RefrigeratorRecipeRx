@@ -17,4 +17,9 @@ class RegisterExpirationItemViewController: UIViewController {
     var presenter: RegisterExpirationItemPresenterProtocol?
     
     var toolBar: UIToolbar!
+
+    public func inject(presenter: RegisterExpirationItemPresenterProtocol) {
+        self.presenter = presenter
+    }
+    
 }
