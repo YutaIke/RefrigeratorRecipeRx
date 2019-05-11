@@ -49,6 +49,7 @@ class RegisterExpirationItemViewController: UIViewController {
         let expirationItem = ExpirationItemModel(productName: productName, expirationDate: expirationDate)
         
         presenter?.save(expirationItem)
+        self.navigationController?.popViewController(animated: true)
     }
     
     //datepickerが選択されたらtextfieldに表示
