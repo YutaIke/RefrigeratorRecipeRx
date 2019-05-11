@@ -36,12 +36,12 @@ class ExpirationListViewController: UIViewController {
         // ナビゲーションバーの右側にボタン付与
         self.navigationItem.setRightBarButtonItems([addButton], animated: true)
         self.tableView.separatorInset = UIEdgeInsets.zero
-    
-        presenter?.loadExpirationList()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
+        presenter?.loadExpirationList()
     }
     
     @objc internal func moveToRegisterView(sender: UIButton) {
