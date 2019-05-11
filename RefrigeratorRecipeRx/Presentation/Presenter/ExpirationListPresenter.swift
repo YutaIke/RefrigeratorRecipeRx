@@ -27,6 +27,7 @@ protocol ExpirationListPresenterProtocol {
     func loadExpirationList()
     func didTapExpirationList()
     func moveToRegisterView()
+    func delete(_ expirationItem: ExpirationItemModel)
 }
 
 class ExpirationListPresenter: ExpirationListPresenterProtocol {
@@ -61,6 +62,10 @@ class ExpirationListPresenter: ExpirationListPresenterProtocol {
     
     func moveToRegisterView() {
         wireframe.moveToRegisterView()
+    }
+    
+    func delete(_ expirationItem: ExpirationItemModel) {
+        useCase.delete(expirationItem)
     }
 }
 

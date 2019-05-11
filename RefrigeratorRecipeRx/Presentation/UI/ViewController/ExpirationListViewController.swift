@@ -75,6 +75,25 @@ extension ExpirationListViewController: UITableViewDataSource {
 
         presenter?.didTapExpirationList()
     }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let deleteButton: UITableViewRowAction = UITableViewRowAction(style: .normal, title: "削除") { (action, index) -> Void in
+            self.presenter?.delete(self.expirations[indexPath.row])
+            self.expirations.remove(at: indexPath.row)
+
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+        deleteButton.backgroundColor = UIColor.red
+        
+        // TODO: 編集処理の実装
+        let editButton: UITableViewRowAction = UITableViewRowAction(style: .normal, title: "編集") { (action, index) -> Void in
+//            self.editExpirationDateItem(at: indexPath.row)
+        }
+        editButton.backgroundColor = UIColor.green
+        
+        return [deleteButton, editButton]
+    }
 }
 
 // MARK: UITableViewDelegate

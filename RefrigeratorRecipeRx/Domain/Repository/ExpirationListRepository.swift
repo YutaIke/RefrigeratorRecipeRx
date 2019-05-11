@@ -12,6 +12,7 @@ import RealmSwift
 
 protocol ExpirationListRepositoryProtocol {
     func save(_ expirationItem: ExpirationItemEntity)
+    func delete(_ expirationItem: ExpirationItemEntity)
     func getAllExpirationItemList() -> Observable<[ExpirationItemEntity]>
     func createNewId() -> Int
 }
@@ -26,6 +27,10 @@ struct ExpirationListRepository: ExpirationListRepositoryProtocol {
     func save(_ expirationItem: ExpirationItemEntity) {
         expirationItem.id = createNewId()
         dataStore.save(expirationItem)
+    }
+    
+    func delete(_ expirationItem: ExpirationItemEntity) {
+        dataStore.delete(expirationItem)
     }
     
     func getAllExpirationItemList() -> Observable<[ExpirationItemEntity]> {

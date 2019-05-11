@@ -46,7 +46,7 @@ class RegisterExpirationItemViewController: UIViewController {
                 print("ValidationError")
                 return
         }
-        let expirationItem = ExpirationItemModel(productName: productName, expirationDate: expirationDate)
+        let expirationItem = ExpirationItemModel(id: nil ,productName: productName, expirationDate: expirationDate)
         
         presenter?.save(expirationItem)
         self.navigationController?.popViewController(animated: true)

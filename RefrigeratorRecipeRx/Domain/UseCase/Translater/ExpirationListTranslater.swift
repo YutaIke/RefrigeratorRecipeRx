@@ -24,6 +24,9 @@ class ExpirationListTranslater {
     
     static func generate(expirationItemModel: ExpirationItemModel) -> ExpirationItemEntity {
         let entity = ExpirationItemEntity()
+        if let unwrappedId = expirationItemModel.id {
+            entity.id = unwrappedId
+        }
         entity.productName = expirationItemModel.productName
         entity.expirationDate = expirationItemModel.expirationDate
         return entity

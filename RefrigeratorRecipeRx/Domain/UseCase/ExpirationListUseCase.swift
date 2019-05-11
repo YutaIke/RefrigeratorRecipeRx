@@ -12,6 +12,7 @@ import RxSwift
 protocol ExpirationListUseCaseProtocol {
     func save(_ expirationItem: ExpirationItemModel)
     func loadExpirationList() -> Observable<ExpirationItemModels>
+    func delete(_ expirationItem: ExpirationItemModel)
 }
 
 class ExpirationListUseCase: ExpirationListUseCaseProtocol {
@@ -31,5 +32,8 @@ class ExpirationListUseCase: ExpirationListUseCaseProtocol {
         return expirationList.map { ExpirationListTranslater.generate(expirationItemEntities: $0) }
     }
     
-    
+    func delete(_ expirationItem: ExpirationItemModel) {
+        expirationListRepository.delete( ExpirationListTranslater.generate(expirationItemModel: expirationItem) )
+    }
+
 }

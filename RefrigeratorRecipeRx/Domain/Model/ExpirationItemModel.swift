@@ -13,17 +13,20 @@ struct ExpirationItemModels {
 }
 
 struct ExpirationItemModel: ExpirationListViewModelProtocol {
+    var id: Int? // idは必ずしも画面が知っておくべき情報ではないためnil許可
     var productName: String = ""
     var expirationDate: String = ""
  
     init() {}
 
-    init(productName: String!, expirationDate: String!) {
+    init(id: Int?, productName: String!, expirationDate: String!) {
+        self.id = id
         self.productName = productName
         self.expirationDate = expirationDate
     }
-
+    
     init(expirationItemEntity: ExpirationItemEntity) {
+        self.id = expirationItemEntity.id
         self.productName = expirationItemEntity.productName
         self.expirationDate = expirationItemEntity.expirationDate
     }

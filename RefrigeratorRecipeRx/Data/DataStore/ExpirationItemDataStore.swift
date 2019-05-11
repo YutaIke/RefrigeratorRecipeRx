@@ -12,11 +12,19 @@ import RealmSwift
 
 protocol ExpirationItemDataStoreProtocol {
     func save(_ expirationItem: ExpirationItemEntity)
+    func delete(_ expirationItem: ExpirationItemEntity)
     func getAllExpirationItems() -> Observable<[ExpirationItemEntity]>
 }
 
 class ExpirationItemDataStore: ExpirationItemDataStoreProtocol {
 
+    func loadExpirationItem(id: Int) -> Results<ExpirationItemEntity> {
+        let realm = try! Realm()
+        let result = realm.objects(ExpirationItemEntity.self).filter("id=%@", id)
+        return result
+    }
+    
+    // FIXME: Resultsの型で返すように修正。Observableへの変換は取得に行う。
     func getAllExpirationItems() -> Observable<[ExpirationItemEntity]> {
         let realm = try! Realm()
         let expirationDateObj = Array(realm.objects(ExpirationItemEntity.self))
@@ -27,6 +35,13 @@ class ExpirationItemDataStore: ExpirationItemDataStoreProtocol {
         let realm = try! Realm()
         try! realm.write {
             realm.add(expirationItem, update: true)
+        }
+    }
+    
+    func delete(_ expirationItem: ExpirationItemEntity) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.delete(loadExpirationItem(id: expirationItem.id))
         }
     }
 }
