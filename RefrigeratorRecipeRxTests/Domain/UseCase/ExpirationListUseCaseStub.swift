@@ -11,6 +11,10 @@ import XCTest
 import RxSwift
 
 class ExpirationListUseCaseStub: ExpirationListUseCaseProtocol {
+    func delete(_ expirationItem: ExpirationItemModel) {
+        
+    }
+    
     
     var resultToBeReturned: Observable<ExpirationItemModels>!
     
